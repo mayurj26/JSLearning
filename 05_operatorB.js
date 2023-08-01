@@ -64,3 +64,13 @@ var javascript2 = a('google');
 console.log('Length of String is',javascript2);   
 var resno1 = javascript2%2==0 ? "EVEN": "ODD"
 console.log('Type of String is',resno1);
+
+console.log("----------------------------------------------");
+var interviewEligibilty = function(gradScore, hscScore, sssScore, candidateName){
+
+   var result =  gradScore>=70 || hscScore>=80 || sssScore >=90 ?` Congrates ${candidateName} you are Elegible for TCS` : `not Eligibile`
+   console.log(result);
+}
+interviewEligibilty(80, 86, 90, `mahi`);
+interviewEligibilty(70, 65, 55, `Gill`);
+interviewEligibilty(60, 79, 88, `steve`);
