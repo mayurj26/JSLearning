@@ -58,7 +58,7 @@ console.log(`Type of num4 is : ${typeof result1}`);
 
     var num5 = "10";
         var result11 = Boolean(num5); 
-    console.log(`result is : ${result11} Type of num3 is : ${typeof result11}`);
+    console.log(`result is : ${result11} Type of num3 is : ${typeof result11}`);    
 //boolean to string
 var isMarried = true;
 var result = String(isMarried);
