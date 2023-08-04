@@ -56,10 +56,23 @@ for (let index = 1; index<10; index=index+2) {
     console.log(index);
       
   }
+  
   console.log(`--------------1st 15 EVEN NO----------------`);
- // var result = " ";
-  for (let index = 0; index<30; index=index+2) {
-     // result = result.concat(index).concate(" ");
-      console.log(index);
+ var result = " ";
+  for (let index = 0; index <30; index=index+2) 
+  {
+      result = result.concat(index).concat(" ");
+     // console.log(index);
         
     }
+    console.log(result);
+    //----------------------while loop
+    console.log(`--------------While loop----------------`);
+    var i = 1;
+    var result = "";
+    while (i<=10)
+      {
+        result = result.concat(i).concat(" ");
+        i++;
+      }
+      console.log(result);
