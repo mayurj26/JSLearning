@@ -1,0 +1,41 @@
+
+let array = [11, "6ft", "G.K", "MH", true, true];
+console.log(array);
+let map = new Map();
+map.set("roll  no", 11);     //key   n   its value   key is   always  string
+map.set("height", "6ft");
+map.set("name", "G,K");
+map.set("state", "MH");
+map.set("isMarried", true);
+map.set("HaveKid", true);
+map.set("skilled", ["Angular", "React", "Java", "Docker", "K8", "CICD"]);
+console.table(map);
+console.log("---------------------------------------------------");
+console.log(map.size);
+console.log("---------------------------------------------------");
+let heightvalue = map.get("height");
+console.log(heightvalue);
+console.log("----------------------Skilled-----------------------------");
+let skills = map.get("skilled");
+for (const skill of skills) {
+    console.log(skill);
+}
+console.log("----------------------find key -----------------------------");
+let isHeightKeyAvailable = map.has("height");
+console.log(isHeightKeyAvailable);
+console.log("----------------------Delete   key-----------------------------");
+map.delete("HaveKid");
+console.table(map);
+console.log("----------------------return key   n   values -----------------------------");
+console.log(map.keys());
+console.log(map.values());
+console.log("---------------------- key override -----------------------------");
+console.log(map.keys());
+map.set("rollno",22);
+console.table(map);
+console.log("----------------------Transversing map -----------------------------");
+console.log(map.keys());
+let keys =   map.keys();
+for(const key of keys){
+    console.log(`${key}==>${map.get(key)}`);
+}
