@@ -67,35 +67,9 @@ let address = {
 let details     =   bank.address.city;
 delete bank.address.telphone;
 console.log(bank);
-console.log(bank.address);
+//console.log(bank.address);
 
 
 //update
 bank.address.country    =   "maharashtra";
-//console.log(bank.address);
-
-
-let professor   =   {
-    Name:   "abcd",
-        Telephone:  346576789,
-    Dept:   "IT",
-    College:    "SAE",
-    Degree : {
-degree1 : "Engineering",
-degree2 : "CSC",
-degree3 : "PHD",
-degree4 :   "ADV.Computing",
-getdegree:  function () {
-    console.log('proffesor  Degree:${this.street} ,   ${this.degree1},  ${this.degree2} ,    ${this.degree3}');
-}
-   },
-   certificate :   ["Hacker Rank","IFE  Course","ADV.Programming"],
-  // gadgets: [];
-}
-console.log(professor);
-console.log(professor.Degree);
-professor.certificate.pop();
-console.log(professor.certificate);
-professor.certificate.unshift("MArk");
-//professor.gadgets   = new   Map();  ["laptops"];
-professor.address.getdegree();
+console.log(bank.address);

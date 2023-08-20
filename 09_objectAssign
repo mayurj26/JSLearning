@@ -1,0 +1,93 @@
+console.log("--------------------------------------Assignment----------------------------------------------");
+
+let professor   =   {
+    Name:   "abcd",
+    //    Telephone:  346576789,
+  //  Dept:   "IT",
+   // College:    "SAE",
+    degree : {
+degree1 : "Engineering",
+degree2 : "CSC",
+degree3 : "PHD",
+degree4 :   "ADV.Computing",
+getDegree: function(){
+    console.log(`proffesor  Degree:${this.degree1} ${this.degree2} ${this.degree3}  ${this.degree4}`);
+ 
+}   },
+   certificate :   ["Hacker Rank","IFE  Course","ADV.Programming"],
+   
+  // gadgets: [];
+}
+console.log(professor);
+console.log(professor.degree);
+professor.certificate.pop();
+console.log(professor.certificate);
+professor.certificate.unshift("Mark");
+console.log(professor.certificate);
+//professor.gadgets   = new   Map();  ["laptops"];
+professor.degree.getDegree();
+professor.totalExp="15yrs:";
+console.log(professor);
+professor.certificate.push("Oracle  Certificate");
+console.log(professor.certificate);
+
+/*
+console.log("--------------------ASSIGN2-----------------------------");
+let SbiBank   =   {
+    BankName:     "SBI  BANK",
+    location:    "PUNE",
+    accountno:   "IT",
+    ifsc:         "SAE",
+    interestRate:"12%",
+}
+let axisbank   =   {
+    BankName:     "AXIS BANK",
+    location:    "PUNE",
+    accountno:   "IT",
+    ifsc:         "SAE",
+    interestRate:"12%",
+}
+let hdfcbank   =   {
+    BankName:     "HDFC BANK",
+    location:    "PUNE",
+    accountno:   "IT",
+    ifsc:         "SAE",
+    interestRate:"12%",
+}
+let yesbank   =   {
+    BankName:     "YES  BANK",
+    location:    "PUNE",
+    accountno:   "IT",
+    ifsc:         "SAE",
+    interestRate:"12%",
+}
+console.table(SbiBank);
+console.table(axisbank);*/
+
+console.log("--------------------------------------");
+// Define the Bank class
+class Bank {
+    constructor(bankName, location, accountNo, ifsc, interestRate) {
+        this.bankName = bankName;
+        this.location = location;
+        this.accountNo = accountNo;
+        this.ifsc = ifsc;
+        this.interestRate = interestRate;
+    }
+
+    showDetails() {
+        console.log(`Bank Name: ${this.bankName}, Location: ${this.location}, Account No: ${this.accountNo}, IFSC: ${this.ifsc}, Interest Rate: ${this.interestRate}`);
+    }
+}
+
+// Create instances for each bank
+const sbiBank = new Bank("SBI", "New York", "12345678", "SBIN0001234", 4.5);
+const axisBank = new Bank("Axis Bank", "London", "98765432", "AXIS0005678", 5.0);
+const hdfcBank = new Bank("HDFC Bank", "Tokyo", "56789012", "HDFC0008901", 4.8);
+const yesBank = new Bank("Yes Bank", "Paris", "34567890", "YESB0002345", 3.7);
+
+// Invoke showDetails() on each object
+sbiBank.showDetails();
+axisBank.showDetails();
+hdfcBank.showDetails();
+yesBank.showDetails();
